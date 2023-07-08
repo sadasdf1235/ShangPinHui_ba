@@ -9,7 +9,7 @@
       label-position="left"
     >
       <div class="title-container">
-        <h3 class="title">登录大镖客</h3>
+        <h3 class="title">登录</h3>
       </div>
 
       <el-form-item prop="username">
@@ -197,8 +197,7 @@ $light_gray: #eee;
 .login-container {
   min-height: 100%;
   width: 100%;
-  background: url(~@/assets/redDead2.jpg);
-  background-size: 100% 100%;
+  background: url(~@/assets/2.png) no-repeat center / cover;
   overflow: hidden;
 
   .login-form {
