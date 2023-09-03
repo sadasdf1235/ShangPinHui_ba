@@ -22,10 +22,10 @@ Vue.prototype.$API = API
 //注册三级联动的全局组件
 import CategorySelect from '@/components/CategorySelect'
 Vue.component(CategorySelect.name, CategorySelect)
-if (process.env.NODE_ENV === 'production') {
-  const { mockXHR } = require('../mock')
-  mockXHR()
-}
+// if (process.env.NODE_ENV === 'production') {
+//   // const { mockXHR } = require('../mock')
+//   mockXHR()
+// }
 Vue.use(ElementUI, { locale })
 
 Vue.config.productionTip = false

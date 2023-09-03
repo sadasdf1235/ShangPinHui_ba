@@ -137,6 +137,7 @@ export default {
       this.page = pages;
       const { page, limit } = this;
       let result = await this.$API.sku.reqSkuList(page, limit);
+      console.log(result);
       if (result.code == 200) {
         this.records = result.data.records;
         this.total = result.data.total;
@@ -157,6 +158,7 @@ export default {
       })
         .then(async () => {
           let result = await this.$API.sku.reqDeleteSku(row.id);
+          console.log(result);
           if (result.code == 200) {
             //确定删除执行
             this.$message({
@@ -195,6 +197,7 @@ export default {
     async show(row) {
       this.drawer = true;
       let result = await this.$API.sku.reqGetSkuById(row.id);
+      console.log(result);
       if (result.code == 200) {
         this.skuInfo = result.data;
       }

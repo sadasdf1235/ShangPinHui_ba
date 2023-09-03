@@ -177,6 +177,7 @@ export default {
     },
     //添加属性值
     addAttrValue() {
+      console.log(this.attrInfo.id);
       this.attrInfo.attrValueList.push({
         attrId: this.attrInfo.id,
         valueName: "",

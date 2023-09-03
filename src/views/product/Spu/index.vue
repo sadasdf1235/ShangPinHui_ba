@@ -213,6 +213,7 @@ export default {
       //弹出框显示
       this.dialogTableVisible = true;
       this.spu = spu;
+      console.log(this.spu);
       let result = await this.$API.sku.reqGetSkuList(spu.id);
       if (result.code == 200) {
         this.skuList = result.data;
